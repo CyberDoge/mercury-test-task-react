@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/font/Gotham-font/Gotham-Bold.otf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: 'GothamBook';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/font/Gotham-font/GothamBook.ttf');
+}
+
+::placeholder {
+  opacity: 0.4;
+  color: #262626;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  opacity: 0.4;
+  color: #262626;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 0.4;
+  color: #262626;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  opacity: 0.4;
+  color: #262626;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  opacity: 0.4;
+  color: #262626;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
 }

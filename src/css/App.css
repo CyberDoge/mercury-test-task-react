@@ -1,0 +1,183 @@
+
+@media (max-width: 640px) {
+    .central-block {
+        margin: 37px 16px;
+    }
+
+    .header {
+        margin-top: 43px;
+        padding-left: 20.94%;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header::before {
+        content: url('../resources/img/logo210x46_red_black.svg');
+    }
+
+    .form__element {
+        margin: 32px 24px 0;
+    }
+
+    .form__input-item {
+        margin-bottom: 24px;
+    }
+
+    .form__submit {
+        margin: 40px auto;
+    }
+
+    .page {
+        background-image: url('../resources/img/background-mobile.png');
+        background-size: cover;
+    }
+}
+
+@media (min-width: 641px) {
+    .header {
+        padding-left: 6.66vw;
+        grid-row: 1;
+        grid-column: 2;
+        padding-top: 141px;
+    }
+
+    .header__logo::before {
+        content: url('../resources/img/Logo.svg');
+    }
+
+    .form {
+        margin: 125px auto auto;
+    }
+
+    .central-block {
+        width: 600px;
+        grid-row: 2;
+        grid-column: 2;
+        margin: 0 auto;
+    }
+
+    .form__element {
+        margin: 48px 48px 0;
+    }
+
+    .form__input-item {
+        margin-bottom: 32px;
+    }
+
+    .form__submit {
+        margin: 48px auto 60px;
+    }
+
+}
+
+.central-block__content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+    align-items: stretch;
+}
+
+.form * {
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.form__input-item.last {
+    margin-bottom: 0;
+}
+
+.form__input-item {
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 4px;
+    height: 48px;
+    padding: 14px 16px;
+    font-family: Gotham, serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #262626;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.form__input-item:focus {
+    border: 1px solid rgba(151, 151, 151, 0.25);
+}
+
+.form__title {
+    font-family: Gotham, serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #262626;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.form__invalid-email {
+    font-family: Gotham, serif;
+    color: #ed4159;
+    background: rgba(237, 65, 89, 0.25);
+    border-radius: 4px;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding: 12px 16px 8px;
+    height: auto;
+    min-height: 40px;
+    opacity: 1;
+}
+
+.form__submit {
+    width: 148px;
+    height: 48px;
+    content: 'Login';
+}
+
+.active-btn {
+    background: #ed4159;
+    box-shadow: 0 4px 16px rgba(237, 65, 89, 0.4);
+    border-radius: 100px;
+    font-family: 'GothamBook', serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.active-btn:hover {
+    background: #ffffff;
+    color: #ed4159;
+    box-shadow: 0 6px 20px rgba(237, 65, 89, 0.4);
+}
+
+.active-btn:active {
+    color: #ed4159;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(237, 65, 89, 0.5);
+}
+
+.form__input_email-wrong {
+    border: 1px solid #ed4159;
+    color: #ed4159;
+    opacity: 1;
+}
