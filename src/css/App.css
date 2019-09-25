@@ -36,16 +36,7 @@
 }
 
 @media (min-width: 641px) {
-    .header {
-        padding-left: 6.66vw;
-        grid-row: 1;
-        grid-column: 2;
-        padding-top: 141px;
-    }
 
-    .header__logo::before {
-        content: url('../resources/img/Logo.svg');
-    }
 
     .form {
         margin: 125px auto auto;
