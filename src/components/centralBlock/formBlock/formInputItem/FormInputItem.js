@@ -8,6 +8,7 @@ export default class FormInputItem extends React.Component {
         className={`form__input-item ${this.props.typeClass}`}
         placeholder={this.props.placeholderValue}
         type={this.props.typeValue}
+        onChange={this.props.changeEventHandler} //todo вынести в отдельный метод без пропса
       />
     );
   }

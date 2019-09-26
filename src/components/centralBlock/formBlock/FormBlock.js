@@ -3,6 +3,23 @@ import FormInputItem from "./formInputItem/FormInputItem";
 import "components/centralBlock/formBlock/FormBlock.css";
 
 export default class FormBlock extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = { email: "", password: "" };
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handlePasswordChange = this.handlePasswordChange.bind(this);
+  }
+
+  handleEmailChange(event) {
+    const emailValue = event.target.value;
+    this.setState({ email: emailValue });
+  }
+
+  handlePasswordChange(event) {
+    const passwordValue = event.target.value;
+    this.setState({ password: passwordValue });
+  }
+
   render() {
     return (
       <form className="form central-block__content">
@@ -12,11 +29,13 @@ export default class FormBlock extends React.Component {
             typeClass="form__input_email"
             placeholderValue="E-Mail"
             typeValue="email"
+            changeEventHandler={this.handleEmailChange}
           />
           <FormInputItem
             typeClass="form__input_password last"
             placeholderValue="Password"
             typeValue="password"
+            changeEventHandler={this.handlePasswordChange}
           />
           <div className="form__input-item form__invalid-email hide">
             E-Mail or password is incorrect
