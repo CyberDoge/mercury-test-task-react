@@ -1,6 +1,6 @@
 import React from "react";
 import FormInputItem from "./formInputItem/FormInputItem";
-import 'components/centralBlock/formBlock/FormBlock.css'
+import "components/centralBlock/formBlock/FormBlock.css";
 
 export default class FormBlock extends React.Component {
   render() {

@@ -1,6 +1,14 @@
-.central-block {
+@media (min-width: 641px) {
+  .central-block {
     width: 600px;
     grid-row: 2;
     grid-column: 2;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .central-block {
+    margin: 37px 16px;
+  }
 }

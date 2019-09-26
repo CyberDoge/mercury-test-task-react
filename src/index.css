@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Gotham';
+  font-family: "Gotham";
   font-style: normal;
   font-weight: normal;
-  src: url('assets/font/Gotham-font/Gotham-Bold.otf');
+  src: url("assets/font/Gotham-font/Gotham-Bold.otf");
 }
 
 @font-face {
-  font-family: 'GothamBook';
+  font-family: "GothamBook";
   font-style: normal;
   font-weight: normal;
-  src: url('assets/font/Gotham-font/GothamBook.ttf');
+  src: url("assets/font/Gotham-font/GothamBook.ttf");
 }
 
 ::placeholder {

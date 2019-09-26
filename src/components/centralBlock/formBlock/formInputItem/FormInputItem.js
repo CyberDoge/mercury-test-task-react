@@ -1,5 +1,5 @@
 import React from "react";
-import 'components/centralBlock/formBlock/formInputItem/FormInputItem.css'
+import "components/centralBlock/formBlock/formInputItem/FormInputItem.css";
 
 export default class FormInputItem extends React.Component {
   render() {
