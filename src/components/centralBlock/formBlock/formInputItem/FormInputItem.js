@@ -1,14 +1,14 @@
 import React from "react";
 import "components/centralBlock/formBlock/formInputItem/FormInputItem.css";
+import ComponentService from "../../../../service/ComponentService";
 
 export default class FormInputItem extends React.Component {
   render() {
+    const typeClass = ComponentService.classJoiner(this.props.typeClass)
     return (
       <input
-        className={`form__input-item ${this.props.typeClass}`}
-        placeholder={this.props.placeholderValue}
-        type={this.props.typeValue}
-        onChange={this.props.changeEventHandler} //todo вынести в отдельный метод без пропса
+        className={`form__input-item ${typeClass}`}
+        {...this.props}
       />
     );
   }

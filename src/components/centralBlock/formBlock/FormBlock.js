@@ -27,15 +27,15 @@ export default class FormBlock extends React.Component {
         <div className="form__element form__input_content-div">
           <FormInputItem
             typeClass="form__input_email"
-            placeholderValue="E-Mail"
-            typeValue="email"
-            changeEventHandler={this.handleEmailChange}
+            placeholder="E-Mail"
+            type="email"
+            onChange={this.handleEmailChange}
           />
           <FormInputItem
             typeClass="form__input_password last"
-            placeholderValue="Password"
-            typeValue="password"
-            changeEventHandler={this.handlePasswordChange}
+            placeholder="Password"
+            type="password"
+            onChange={this.handlePasswordChange}
           />
           <div className="form__input-item form__invalid-email hide">
             E-Mail or password is incorrect
