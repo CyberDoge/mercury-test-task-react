@@ -2,10 +2,6 @@ import React from "react"
 import "./InfoBlock.css"
 
 export default class InfoBlock extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
-
   render() {
     return (
       <div className="user-info central-block__content">

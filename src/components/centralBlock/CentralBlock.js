@@ -21,7 +21,6 @@ export default class CentralBlock extends React.Component {
   }
 
   render() {
-    console.log("rerender")
     return (
       <div className="central-block">
         { this.state.isLogin ?

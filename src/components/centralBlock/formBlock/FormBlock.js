@@ -55,13 +55,13 @@ export default class FormBlock extends React.Component {
         <div className="form__element form__title">Log In</div>
         <div className="form__element form__input_content-div">
           <FormInputItem
-            typeClass="form__input_email"
+            typeclass="form__input_email"
             placeholder="E-Mail"
             type="email"
             onChange={this.handleEmailChange}
           />
           <FormInputItem
-            typeClass={`"form__input_password ${classesForPasswordInput}"`}
+            typeclass={`"form__input_password ${classesForPasswordInput}"`}
             placeholder="Password"
             type="password"
             onChange={this.handlePasswordChange}
