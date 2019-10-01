@@ -24,11 +24,12 @@ export default class FormBlock extends React.Component {
   }
 
   showError() {
-    this.setState({wrongPassword: true})
+    this.setState({wrongPassword: true});
   }
 
-  hideError() {
-    this.setState({wrongPassword: false})
+  login(username, photoUrl) {
+    this.setState({wrongPassword: false});
+    this.props.login(username, photoUrl);
   }
 
   handleSubmit(event) {
@@ -36,9 +37,9 @@ export default class FormBlock extends React.Component {
     this.requestService.postRequest("login", {
       email: this.state.email,
       password: this.state.password
-    }, (r) => {
-      this.hideError();
-    }, (r) => {
+    }, (response) => {
+      this.login(response.name, response.photoUrl);
+    }, (error) => {
       this.showError();
     })
   }
@@ -54,13 +55,13 @@ export default class FormBlock extends React.Component {
         <div className="form__element form__title">Log In</div>
         <div className="form__element form__input_content-div">
           <FormInputItem
-            typeClass="form__input_email"
+            typeclass="form__input_email"
             placeholder="E-Mail"
             type="email"
             onChange={this.handleEmailChange}
           />
           <FormInputItem
-            typeClass={`"form__input_password ${classesForPasswordInput}"`}
+            typeclass={`"form__input_password ${classesForPasswordInput}"`}
             placeholder="Password"
             type="password"
             onChange={this.handlePasswordChange}
