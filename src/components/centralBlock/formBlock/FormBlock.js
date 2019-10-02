@@ -2,7 +2,7 @@ import React from "react";
 import FormInput from "../../../UI-Kit/Core/form/formInput/FormInput";
 import "components/centralBlock/formBlock/FormBlock.css";
 import RequestService from "../../../service/RequestService";
-import Form  from "UI-Kit/Core/form/Form";
+import Form from "UI-Kit/Core/form/Form";
 
 export default class FormBlock extends React.Component {
   constructor(props, context) {

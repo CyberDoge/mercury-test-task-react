@@ -4,7 +4,7 @@ import { classJoiner, mutablePropsCopy } from "../../../../service/ComponentServ
 
 export default class FormInput extends React.Component {
   constructor(props, context) {
-    //todo подмать как сократить
+    //todo подмать как использовать
     super(props, context);
     const mutableProps = mutablePropsCopy(props);
     mutableProps.className = classJoiner()
