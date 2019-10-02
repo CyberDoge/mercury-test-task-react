@@ -2,6 +2,7 @@ import React from "react";
 import FormInputItem from "./formInputItem/FormInputItem";
 import "components/centralBlock/formBlock/FormBlock.css";
 import RequestService from "../../../service/RequestService";
+import Form  from "UI-Kit/Core/Form";
 
 export default class FormBlock extends React.Component {
   constructor(props, context) {
@@ -56,7 +57,7 @@ export default class FormBlock extends React.Component {
     const classesForDivWrong = this.state.wrongPassword ? "last" : "hide";
     const classesForPasswordInput = this.state.wrongPassword ? "" : "last";
     return (
-      <form
+      <Form
         className="form central-block__content"
         onSubmit={this.handleSubmit}
       >
@@ -85,7 +86,7 @@ export default class FormBlock extends React.Component {
           type="submit"
           value="Login"
         />
-      </form>
+      </Form>
     );
   }
 }
