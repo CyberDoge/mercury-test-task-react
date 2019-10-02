@@ -1,8 +1,8 @@
 import React from "react";
-import FormInputItem from "./formInputItem/FormInputItem";
+import FormInput from "../../../UI-Kit/Core/form/formInput/FormInput";
 import "components/centralBlock/formBlock/FormBlock.css";
 import RequestService from "../../../service/RequestService";
-import Form  from "UI-Kit/Core/Form";
+import Form  from "UI-Kit/Core/form/Form";
 
 export default class FormBlock extends React.Component {
   constructor(props, context) {
@@ -63,14 +63,14 @@ export default class FormBlock extends React.Component {
       >
         <div className="form__element form__title">Log In</div>
         <div className="form__element form__input_content-div">
-          <FormInputItem
-            typeclass="form__input_email"
+          <FormInput
+            className="form__input-item form__input_email"
             placeholder="E-Mail"
             type="email"
             onChange={this.handleEmailChange}
           />
-          <FormInputItem
-            typeclass={`"form__input_password ${classesForPasswordInput}"`}
+          <FormInput
+            className={`"form__input_password form__input-item ${classesForPasswordInput}"`}
             placeholder="Password"
             type="password"
             onChange={this.handlePasswordChange}
@@ -81,7 +81,7 @@ export default class FormBlock extends React.Component {
             E-Mail or password is incorrect
           </div>
         </div>
-        <input
+        <FormInput
           className="form__element form__submit active-btn"
           type="submit"
           value="Login"
