@@ -9,10 +9,7 @@ export default class FormInputItem extends React.Component {
   }
   render() {
     return (
-      <input
-        className={`form__input-item ${this.typeclass}`}
-        {...this.props}
-      />
+      <input className={`form__input-item ${this.typeclass}`} {...this.props} />
     );
   }
 }

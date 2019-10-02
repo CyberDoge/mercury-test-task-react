@@ -1,6 +1,6 @@
 export default class RequestService {
   constructor(host, isHttps) {
-    this.host = new URL(isHttps ? 'http' : 'https' + '://' + host)
+    this.host = new URL(isHttps ? "http" : "https" + "://" + host);
   }
 
   /**
@@ -13,18 +13,18 @@ export default class RequestService {
   postRequest(path, requestObject, funcOk, funError) {
     let urlOfRequest = new URL(path, this.host);
     fetch(urlOfRequest.toString(), {
-      method: 'POST',
-      mode: 'cors',
+      method: "POST",
+      mode: "cors",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(requestObject),
+      body: JSON.stringify(requestObject)
     }).then(response => {
       if (response.ok) {
-        response.json().then(data => funcOk(data))
+        response.json().then(data => funcOk(data));
       } else {
-        funError()
+        funError();
       }
-    })
+    });
   }
 }
