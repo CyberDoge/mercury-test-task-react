@@ -9,15 +9,12 @@ function mutablePropsCopy(props) {
   const mutatedProps = {};
   for (const property in props) {
     if (property === "className") {
-      mutatedProps[property] = classJoiner(
-        props[property]
-      );
-    }else {
+      mutatedProps[property] = classJoiner(props[property]);
+    } else {
       mutatedProps[property] = props[property];
     }
   }
   return mutatedProps;
-
 }
 
 const argsToArrayWithOutDuplicates = args => {
@@ -33,4 +30,4 @@ const argsToArrayWithOutDuplicates = args => {
   return [...new Set(tmpArray)];
 };
 
-export {mutablePropsCopy, classJoiner}
+export { mutablePropsCopy, classJoiner };
