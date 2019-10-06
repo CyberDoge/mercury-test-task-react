@@ -55,12 +55,13 @@ export default class FormHolder extends React.Component {
   render() {
     const classesForDivWrong = this.state.wrongPassword ? "last" : "hide";
     const classesForPasswordInput = this.state.wrongPassword ? "" : "last";
+    const classesForEmailInput = this.state.wrongPassword ? "form-holder__input_email-wrong" : "";
     return (
       <form className="form-holder main__content" onSubmit={this.handleSubmit}>
         <div className="form-holder__element form-holder__title">Log In</div>
         <div className="form-holder__element form-holder_input_content-div">
           <FormInputItem
-            typeclass="form-holder__input_email"
+            typeclass={`form-holder__input_email ${classesForEmailInput}`}
             placeholder="E-Mail"
             type="email"
             onChange={this.handleEmailChange}
