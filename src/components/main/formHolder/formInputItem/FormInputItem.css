@@ -1,0 +1,15 @@
+@media (min-width: 641px) {
+  .form-holder__input-item {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .form-holder__input-item {
+    margin-bottom: 24px;
+  }
+}
+
+.form-holder__input-item.last {
+  margin-bottom: 0;
+}
+

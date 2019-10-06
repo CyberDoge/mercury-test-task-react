@@ -50,3 +50,30 @@ body {
 #root {
   height: 100vh;
 }
+
+.active-btn {
+  background: #ed4159;
+  box-shadow: 0 4px 16px rgba(237, 65, 89, 0.4);
+  border-radius: 100px;
+  font-family: "GothamBook", serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.active-btn:hover {
+  background: #ffffff;
+  color: #ed4159;
+  box-shadow: 0 6px 20px rgba(237, 65, 89, 0.4);
+}
+
+.active-btn:active {
+  color: #ed4159;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(237, 65, 89, 0.5);
+}
+
+.hide {
+  display: none;
+}

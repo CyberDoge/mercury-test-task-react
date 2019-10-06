@@ -1,0 +1,92 @@
+@media (min-width: 641px) {
+  .form-holder__element {
+    margin: 48px 48px 0;
+  }
+
+  .form-holder {
+    margin: 125px auto auto;
+  }
+
+  .form-holder__submit {
+    margin: 48px auto 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .form-holder__element {
+    margin: 32px 24px 0;
+  }
+
+  .form-holder__submit {
+    margin: 40px auto;
+  }
+}
+
+.form-holder__title {
+  font-family: Gotham, serif;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #262626;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.form-holder__submit {
+  width: 148px;
+  height: 48px;
+  content: "Login";
+}
+
+.form-holder {
+  align-items: stretch;
+}
+
+.form-holder * {
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+}
+
+.form-holder__input-item {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 4px;
+  height: 48px;
+  padding: 14px 16px;
+  font-family: Gotham, serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #262626;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.form-holder__input-item:focus {
+  border: 1px solid rgba(151, 151, 151, 0.25);
+}
+
+.form-holder__input_email-wrong {
+  border: 1px solid #ed4159;
+  color: #ed4159;
+  opacity: 1;
+}
+
+.form-holder__invalid-email {
+  font-family: Gotham, serif;
+  color: #ed4159;
+  background: rgba(237, 65, 89, 0.25);
+  border-radius: 4px;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 12px 16px 8px;
+  height: auto;
+  min-height: 40px;
+  opacity: 1;
+}
