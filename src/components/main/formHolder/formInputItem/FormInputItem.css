@@ -1,19 +1,19 @@
 @media (min-width: 641px) {
-  .form__input-item {
+  .form-holder__input-item {
     margin-bottom: 32px;
   }
 }
 @media (max-width: 640px) {
-  .form__input-item {
+  .form-holder__input-item {
     margin-bottom: 24px;
   }
 }
 
-.form__input-item.last {
+.form-holder__input-item.last {
   margin-bottom: 0;
 }
 
-.form__input-item {
+.form-holder__input-item {
   width: 100%;
   background: #f1f1f1;
   border-radius: 4px;
@@ -27,6 +27,6 @@
   opacity: 0.8;
 }
 
-.form__input-item:focus {
+.form-holder__input-item:focus {
   border: 1px solid rgba(151, 151, 151, 0.25);
 }

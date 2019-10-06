@@ -1,9 +1,9 @@
 import React from "react";
-import FormBlock from "./formBlock/FormBlock";
-import "components/centralBlock/CentralBlock.css";
-import InfoBlock from "./InfoBlock/InfoBlock";
+import FormHolder from "./formHolder/FormHolder";
+import "components/main/Main.css";
+import CurrentUserInfo from "./currentUserInfo/CurrentUserInfo";
 
-export default class CentralBlock extends React.Component {
+export default class Main extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = { isLogin: false, userPhotoSrc: "", userName: "" };
@@ -25,17 +25,17 @@ export default class CentralBlock extends React.Component {
 
   render() {
     return (
-      <div className="central-block">
+      <main className="main">
         {this.state.isLogin ? (
-          <InfoBlock
+          <CurrentUserInfo
             userPhotoSrc={this.state.userPhotoSrc}
             userName={this.state.userName}
             logout={this.logout}
           />
         ) : (
-          <FormBlock login={this.login} />
+          <FormHolder login={this.login} />
         )}
-      </div>
+      </main>
     );
   }
 }

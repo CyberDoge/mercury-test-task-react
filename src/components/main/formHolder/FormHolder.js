@@ -1,9 +1,9 @@
 import React from "react";
 import FormInputItem from "./formInputItem/FormInputItem";
-import "components/centralBlock/formBlock/FormBlock.css";
+import "components/main/formHolder/FormHolder.css";
 import RequestService from "../../../service/RequestService";
 
-export default class FormBlock extends React.Component {
+export default class FormHolder extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = { email: "", password: "" };
@@ -56,32 +56,29 @@ export default class FormBlock extends React.Component {
     const classesForDivWrong = this.state.wrongPassword ? "last" : "hide";
     const classesForPasswordInput = this.state.wrongPassword ? "" : "last";
     return (
-      <form
-        className="form central-block__content"
-        onSubmit={this.handleSubmit}
-      >
-        <div className="form__element form__title">Log In</div>
-        <div className="form__element form__input_content-div">
+      <form className="form-holder main__content" onSubmit={this.handleSubmit}>
+        <div className="form-holder__element form-holder__title">Log In</div>
+        <div className="form-holder__element form-holder_input_content-div">
           <FormInputItem
-            typeclass="form__input_email"
+            typeclass="form-holder__input_email"
             placeholder="E-Mail"
             type="email"
             onChange={this.handleEmailChange}
           />
           <FormInputItem
-            typeclass={`"form__input_password ${classesForPasswordInput}"`}
+            typeclass={`"form-holder__input_password ${classesForPasswordInput}"`}
             placeholder="Password"
             type="password"
             onChange={this.handlePasswordChange}
           />
           <div
-            className={`form__input-item form__invalid-email ${classesForDivWrong}`}
+            className={`form-holder__input-item form-holder__invalid-email ${classesForDivWrong}`}
           >
             E-Mail or password is incorrect
           </div>
         </div>
         <input
-          className="form__element form__submit active-btn"
+          className="form-holder__element form-holder__submit active-btn"
           type="submit"
           value="Login"
         />
