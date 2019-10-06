@@ -6,7 +6,7 @@ export default class FormInputItem extends React.Component {
   render() {
     const typeclass = classJoiner(this.props.typeclass);
     return (
-      <input className={`form__input-item ${typeclass}`} {...this.props} />
+      <input className={`form-holder__input-item ${typeclass}`} {...this.props} />
     );
   }
 }

@@ -66,7 +66,7 @@ export default class FormHolder extends React.Component {
             onChange={this.handleEmailChange}
           />
           <FormInputItem
-            typeclass={`"form-holder__input_password ${classesForPasswordInput}"`}
+            typeclass={`form-holder__input_password ${classesForPasswordInput}`}
             placeholder="Password"
             type="password"
             onChange={this.handlePasswordChange}

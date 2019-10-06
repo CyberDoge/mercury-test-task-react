@@ -57,18 +57,36 @@
   content: "Login";
 }
 
-.form__input_email-wrong {
+.form-holder__input_email-wrong {
   border: 1px solid #ed4159;
   color: #ed4159;
   opacity: 1;
 }
 
-.form {
+.form-holder {
   align-items: stretch;
 }
 
-.form * {
+.form-holder * {
   box-sizing: border-box;
   border: 0;
   outline: none;
+}
+
+.form-holder__input-item {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 4px;
+  height: 48px;
+  padding: 14px 16px;
+  font-family: Gotham, serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #262626;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.form-holder__input-item:focus {
+  border: 1px solid rgba(151, 151, 151, 0.25);
 }
