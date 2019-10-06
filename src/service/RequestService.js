@@ -1,6 +1,6 @@
 export default class RequestService {
   constructor(host, isHttps) {
-    this.host = new URL(isHttps ? "http" : "https" + "://" + host);
+    this.host = new URL(isHttps ? "http" : "https://" + host);
   }
 
   /**
